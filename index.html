@@ -4,21 +4,38 @@
   <meta charset="utf-8">
   <title>resume</title>
   <style>
-    * {
+      * {
   padding: 0;
+ 
 }
 
 
 .conteiner {
-  width: 1024px;
+  width: 524px;
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
+  border-radius: 1px;
+  
+}
+.header {
+  padding: 20px 0;
+  
+}
+.info_box span {
+  color: #95a5a6
 }
 
+ 
+ h1 {
+
+   font-size: 55px;
+ }
+ 
 .photo,
 .author {
   display: inline-block;
+  
 }
 
 hr {
@@ -31,6 +48,12 @@ hr {
 p {
   text-align: left;
   color: #34495e;
+  font-size: 15px;
+}
+
+pre {
+ text-align: left; 
+ color: #34495e;
 }
 
 li {
@@ -45,12 +68,12 @@ img {
   padding-right: 5px;
   width: 170px;
   height:250px;
-  margin: 5px 100px;
-  text-align: left;
-}
+  
+  }
 
 footer {
-  text-align: left; 
+  text-align: right; 
+  font-size: 12px;
 }
   </style>
  </head> 
@@ -59,13 +82,14 @@ footer {
   <h1>RESUME</h1>
     <div class="header">
       <div class="photo">
-        <img src="https://pp.userapi.com/c850232/v850232312/405f1/WS3yICCaSss.jpg" alt="foto"/>
+        <img src="https://pp.userapi.com/c850232/v850232312/405f1/WS3yICCaSss.jpg"  alt="foto"/>
+  
       </div>
       <div class="author">
         <div class="info_box">
           <h2>Iryna Mileuskaya</h2>
           <p>
-            <span>The position is expected: Developer</span>
+            <span>The position is expected: Junior Web developer</span>
           </p>
             <ul class="contacts">
         <li>
@@ -85,47 +109,55 @@ footer {
   <h3>Summary</h3>
  <hr>
       <p>
-   
+   There is a desire to change the profession to a more popular 
+   on the market and immerse yourself with modern technology and use your activity and the desire for a new profession. There is experience in solving educational problems in Pascal. Independent study of Mysql, the theory of database creation and construction of SQL-queries. Comprehensive study of Web-development within the current courses.
       </p>
   <h3>Skills</h3>
  <hr>
-      <p>
-       
+      <p>I have basic knowledge of SQL, Pascal, Javascript. 
+      I am currently studying at the Rolling Scopes School, where I study HTML, CSS and Javascript more deeply.  
       </p> 
   <h3>Code example</h3>
   <hr>
       <p>
- 
+      <pre> 
+  sort(indices) {
+    var tmp = [];
+    console.log(this.arr);
+    indices = indices.sort();
+    for (var i = 0; i < indices.length; i++){
+      var j = indices[i];
+      console.log(j);
+      if(j in this.arr){
+        tmp.push(this.arr[j]);
+      }
+    }
+    console.log(tmp);
+    tmp = tmp.sort(this.compareFunction);    // your implementation
+    for (var i = 0; i < indices.length; i++){
+      this.arr[indices[i]] = tmp[i];
+    }
+    console.log(this.arr);
+} </pre>
+      <a href="https://github.com/Irin-ka/sorter">Примеры кодов </a>
       </p>
   <h3>Practice</h3>
   <hr>
-      <p>
-       
+      <p>Online courses: <a href="https://www.codewars.com/users/Irin-ka" target="_blank">Javascript tasks</a>, 
+      <a href="https://www.codecademy.com/Irin-ka" target="_blank">HTML & CSS tasks</a>, 
+      <a href="http://35.159.52.194:4000/" target="_blank">Javascript on Padawans</a>,
+        <a href="http://sqlfiddle.com/#!9/a6c585/1" target="_blank">Mysql tasks</a>
       </p>
   <h3>Education</h3>
   <hr>
-      <p>
-        
-      </p>
+      <p> Higher education. Graduated from BarSU with a degree in Economics. 
+      I am currently studying at the Rolling Scopes School. </p>
   <h3>English level</h3>
   <hr>
-      <p>
-        
-      </p>
+      <p>English pre-Intermediate level.
+      Studied at school and independently.  </p>
 
-  
-   <p> 
-3. Summary (цель, пожелания, раскрыть, что важно, что хочется и почему. 
-Некий вариант самопрезентации. Когда опыта минимум, джун продает свой потенциал, 
-свое желание и способность быстро учиться. Не занимать позицию, что он придет, 
-и все кинутся его учить. Но обратное – у джуна время все брать, отовсюду, всегда и т.д.).
-4. Skills (например: языки программирования, фреймворки, методологии, системы контроля версий, тулы...)
-5. Примеры кода (по возможности СВЕЖИЕ)
-6. Опыт (Junior-у имеет смысл указать весь опыт: тестовые задания, проекты с курсов,
-фрилансовые проекты – все, где он применял вышеупомянутые скилы. 
-Круто, если это будет со ссылками на код)
-7. Образование (в т.ч. курсы, семинары, лекции, онлайн-обучение)
-8. Уровень английского (тут стоит указать, какая именно практика была, как долго и т.д.)</p>
+
 
   <footer>
     Copyright Iryna Mileuskaya

@@ -3,6 +3,9 @@
  <head>
   <meta charset="utf-8">
   <title>resume</title>
+  <link rel="stylesheet" href="styles/default.css">
+<script src="highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
   <style>
       * {
   padding: 0;
@@ -130,8 +133,9 @@ footer {
   <h3>Code example</h3>
   <hr>
       <p>
-      <pre> 
-  sort(indices) {
+      <pre> <code class="Javascript">
+   // part of class Sorter
+   sort(indices) {
     var tmp = [];
     console.log(this.arr);
     indices = indices.sort();
@@ -148,7 +152,9 @@ footer {
       this.arr[indices[i]] = tmp[i];
     }
     console.log(this.arr);
-} </pre>
+} 
+</code>
+</pre>
       <a href="https://github.com/Irin-ka/sorter">Примеры кодов </a>
       </p>
   <h3>Practice</h3>
